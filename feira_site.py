@@ -136,7 +136,7 @@ INDEX_TEMPLATE = '''
     <section class="py-5">
         <div class="container">
             <div class="inspiration-box">
-                <h3 class="mb-3">?? QUE AS FEIRAS SEJAM UM PERÍODO DE INSPIRAÇÃO PARA O PRÓXIMO ANO LETIVO</h3>
+                <h3 class="mb-3">QUE A FEIRA SEJAM UMA INSPIRAÇÃO PARA O PRÓXIMO ANO LETIVO</h3>
                 <p class="lead mb-0">Descubra novas ferramentas, tecnologias e possibilidades que transformarão sua jornada educacional!</p>
             </div>
         </div>
