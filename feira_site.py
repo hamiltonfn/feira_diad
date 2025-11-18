@@ -251,7 +251,7 @@ INDEX_TEMPLATE = '''
                         <li class="list-group-item"> FUNDAMENTOS DE REDES DE COMPUTADORES</li>
                         <li class="list-group-item"> INGLÊS TÉCNICO</li>
                         <li class="list-group-item"> MÉTODOS ÁGEIS DE DESENVOLVIMENTO</li>
-                        <li class="list-group-item"> QUICK DRAW - Desenhando com IA</li>
+                     
                     </ul>
                 </div>
             </div>
@@ -699,7 +699,7 @@ CONTATO_TEMPLATE = '''
                         <h4><i class="fas fa-map me-2"></i>Localização</h4>
                         <div class="bg-light p-4 text-center rounded">
                             <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
-                            <p class="mb-2"><strong>Oliver Infos</strong></p>
+                            <p class="mb-2"><strong>Ferreira Infos</strong></p>
                             <p class="text-muted">Rua Castro Alves, 1501, Floriano - PI<br>Caixa d'Água</p>
                             <div class="mt-3">
                                 <small class="text-muted">
