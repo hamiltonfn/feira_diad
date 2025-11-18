@@ -271,7 +271,7 @@ INDEX_TEMPLATE = '''
                 <div class="col-md-6 text-md-end">
                     <p>&copy; 2025 {{ feira.nome }}. Todos os direitos reservados.</p>
                     <p class="mb-0">
-                        <strong>Oliver Infos</strong><br>
+                        <strong>Ferreira Infos</strong><br>
                         Rua Castro Alves, 1501, Floriano - PI<br>
                         Caixa d'Água | Redes Sociais: @cetibucarneto
                     </p>
@@ -655,7 +655,7 @@ CONTATO_TEMPLATE = '''
                         <h4><i class="fas fa-map me-2"></i>Localização</h4>
                         <div class="bg-light p-4 text-center rounded">
                             <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
-                            <p class="mb-2"><strong>Oliver Infos</strong></p>
+                            <p class="mb-2"><strong>Ferreira Infos</strong></p>
                             <p class="text-muted">Rua Castro Alves, 1501, Floriano - PI<br>Caixa d'Água</p>
                            // <div class="mt-3">
                              //       <i class="fas fa-bus me-1"></i>Ônibus: Linhas que passam próximas à escola
