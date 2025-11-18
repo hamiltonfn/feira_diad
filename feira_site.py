@@ -70,6 +70,21 @@ INDEX_TEMPLATE = '''
             text-align: center;
             margin: 30px 0;
         }
+        .tool-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .tool-link:hover {
+            color: inherit;
+        }
+        .tool-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .tool-card:hover {
+            border-color: #28a745;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -77,7 +92,7 @@ INDEX_TEMPLATE = '''
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <a class="navbar-brand fw-bold" href="/">
-                ?? {{ feira.nome }}
+                 {{ feira.nome }}
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -136,7 +151,7 @@ INDEX_TEMPLATE = '''
     <section class="py-5">
         <div class="container">
             <div class="inspiration-box">
-                <h3 class="mb-3">QUE A FEIRA SEJAM UMA INSPIRAÇÃO PARA O PRÓXIMO ANO LETIVO</h3>
+                <h3 class="mb-3">QUE AS FEIRAS SEJAM UM PERÍODO DE INSPIRAÇÃO PARA O PRÓXIMO ANO LETIVO</h3>
                 <p class="lead mb-0">Descubra novas ferramentas, tecnologias e possibilidades que transformarão sua jornada educacional!</p>
             </div>
         </div>
@@ -148,40 +163,69 @@ INDEX_TEMPLATE = '''
             <h2 class="text-center mb-5">FERRAMENTAS DE IA: UM MUNDO DE POSSIBILIDADES À SUA DISPOSIÇÃO!</h2>
             <div class="row">
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow text-center">
-                        <div class="card-body">
-                            <i class="fas fa-robot feature-icon text-primary"></i>
-                            <h5 class="card-title">GAMMA APP</h5>
-                            <p class="card-text">Criação de apresentações inteligentes com IA</p>
+                    <a href="https://gamma.app/" target="_blank" class="tool-link">
+                        <div class="card h-100 shadow text-center tool-card">
+                            <div class="card-body">
+                                <i class="fas fa-robot feature-icon text-primary"></i>
+                                <h5 class="card-title">GAMMA APP</h5>
+                                <p class="card-text">Criação de apresentações inteligentes com IA</p>
+                                <small class="text-muted">Clique para acessar</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow text-center">
-                        <div class="card-body">
-                            <i class="fas fa-magic feature-icon text-warning"></i>
-                            <h5 class="card-title">AKINATOR</h5>
-                            <p class="card-text">O gênio da web que adivinha o que você pensa</p>
+                    <a href="https://pt.akinator.com/" target="_blank" class="tool-link">
+                        <div class="card h-100 shadow text-center tool-card">
+                            <div class="card-body">
+                                <i class="fas fa-magic feature-icon text-warning"></i>
+                                <h5 class="card-title">AKINATOR</h5>
+                                <p class="card-text">O gênio da web que adivinha o que você pensa</p>
+                                <small class="text-muted">Clique para acessar</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow text-center">
-                        <div class="card-body">
-                            <i class="fas fa-comments feature-icon text-success"></i>
-                            <h5 class="card-title">LuziA</h5>
-                            <p class="card-text">Assistente virtual inteligente em português</p>
+                    <a href="https://luzia.com/" target="_blank" class="tool-link">
+                        <div class="card h-100 shadow text-center tool-card">
+                            <div class="card-body">
+                                <i class="fas fa-comments feature-icon text-success"></i>
+                                <h5 class="card-title">LuziA</h5>
+                                <p class="card-text">Assistente virtual inteligente em português</p>
+                                <small class="text-muted">Clique para acessar</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow text-center">
-                        <div class="card-body">
-                            <i class="fas fa-video feature-icon text-danger"></i>
-                            <h5 class="card-title">Vidnoz</h5>
-                            <p class="card-text">Criação de vídeos com tecnologia de IA</p>
+                    <a href="https://www.vidnoz.com/" target="_blank" class="tool-link">
+                        <div class="card h-100 shadow text-center tool-card">
+                            <div class="card-body">
+                                <i class="fas fa-video feature-icon text-danger"></i>
+                                <h5 class="card-title">Vidnoz</h5>
+                                <p class="card-text">Criação de vídeos com tecnologia de IA</p>
+                                <small class="text-muted">Clique para acessar</small>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Draw -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4">
+                    <a href="https://quickdraw.withgoogle.com/" target="_blank" class="tool-link">
+                        <div class="card shadow text-center tool-card">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">QUICK DRAW</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Desenhando com IA - A IA tenta adivinhar o que você desenha</p>
+                                <small class="text-muted">Clique para acessar e desenhar</small>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,11 +238,11 @@ INDEX_TEMPLATE = '''
             <div class="row">
                 <div class="col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item">TECNOLOGIAS E AMBIENTES VIRTUAIS DA APRENDIZAGEM</li>
-                        <li class="list-group-item">FUNDAMENTOS DA TECNOLOGIA DA INFORMAÇÃO</li>
-                        <li class="list-group-item">EDUCAÇÃO AMBIENTAL E SUSTENTABILIDADE</li>
-                        <li class="list-group-item">ARQUITETURA DE COMPUTADORES</li>
-                        <li class="list-group-item">FUNDAMENTOS DE BANCO DE DADOS</li>
+                        <li class="list-group-item"> TECNOLOGIAS E AMBIENTES VIRTUAIS DA APRENDIZAGEM</li>
+                        <li class="list-group-item"> FUNDAMENTOS DA TECNOLOGIA DA INFORMAÇÃO</li>
+                        <li class="list-group-item"> EDUCAÇÃO AMBIENTAL E SUSTENTABILIDADE</li>
+                        <li class="list-group-item"> ARQUITETURA DE COMPUTADORES</li>
+                        <li class="list-group-item"> FUNDAMENTOS DE BANCO DE DADOS</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -207,7 +251,7 @@ INDEX_TEMPLATE = '''
                         <li class="list-group-item"> FUNDAMENTOS DE REDES DE COMPUTADORES</li>
                         <li class="list-group-item"> INGLÊS TÉCNICO</li>
                         <li class="list-group-item"> MÉTODOS ÁGEIS DE DESENVOLVIMENTO</li>
-                       
+                        <li class="list-group-item"> QUICK DRAW - Desenhando com IA</li>
                     </ul>
                 </div>
             </div>
@@ -217,7 +261,7 @@ INDEX_TEMPLATE = '''
     <!-- Cursos Oferecidos -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5"> EM 2026 - ENSINO MÉDIO COM TÉCNICO INTEGRADO</h2>
+            <h2 class="text-center mb-5">EM 2025 - ENSINO MÉDIO COM TÉCNICO INTEGRADO</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card shadow">
@@ -227,7 +271,7 @@ INDEX_TEMPLATE = '''
                                 <div class="col-md-6">
                                     <div class="card bg-primary text-white mb-3">
                                         <div class="card-body">
-                                            <h5> ADMINISTRAÇÃO</h5>
+                                            <h5>ADMINISTRAÇÃO</h5>
                                             <p class="mb-0">Com ênfase em empreendedorismo</p>
                                         </div>
                                     </div>
@@ -235,7 +279,7 @@ INDEX_TEMPLATE = '''
                                 <div class="col-md-6">
                                     <div class="card bg-success text-white">
                                         <div class="card-body">
-                                            <h5> DESENVOLVIMENTO DE SISTEMAS</h5>
+                                            <h5>DESENVOLVIMENTO DE SISTEMAS</h5>
                                             <p class="mb-0">Formação em programação e tecnologia</p>
                                         </div>
                                     </div>
@@ -271,7 +315,7 @@ INDEX_TEMPLATE = '''
                 <div class="col-md-6 text-md-end">
                     <p>&copy; 2025 {{ feira.nome }}. Todos os direitos reservados.</p>
                     <p class="mb-0">
-                        <strong>Ferreira Infos</strong><br>
+                        <strong>Ferrira Infos</strong><br>
                         Rua Castro Alves, 1501, Floriano - PI<br>
                         Caixa d'Água | Redes Sociais: @cetibucarneto
                     </p>
@@ -319,7 +363,7 @@ PALESTRANTE_TEMPLATE = '''
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">?? {{ feira.nome }}</a>
+            <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Início</a>
                 <a class="nav-link active" href="/palestrante">Palestrante</a>
@@ -359,15 +403,15 @@ PALESTRANTE_TEMPLATE = '''
                     <div class="card-body">
                         <div class="timeline">
                             <div class="timeline-item">
-                                <h5> Mestre em Ciência da Computação</h5>
+                                <h5>Mestre em Ciência da Computação</h5>
                                 <p class="text-muted">UFERSA/UERN</p>
                             </div>
                             <div class="timeline-item">
-                                <h5> Bacharel em Sistemas de Informação</h5>
+                                <h5>Bacharel em Sistemas de Informação</h5>
                                 <p class="text-muted">UFPI</p>
                             </div>
                             <div class="timeline-item">
-                                <h5> Técnica em Informática</h5>
+                                <h5>Técnica em Informática</h5>
                                 <p class="text-muted">CTF/Floriano</p>
                             </div>
                         </div>
@@ -450,7 +494,7 @@ SOBRE_TEMPLATE = '''
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">?? {{ feira.nome }}</a>
+            <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Início</a>
                 <a class="nav-link" href="/palestrante">Palestrante</a>
@@ -541,7 +585,7 @@ SOBRE_TEMPLATE = '''
 </html>
 '''
 
-# Template da página de contato (mantido igual)
+# Template da página de contato
 CONTATO_TEMPLATE = '''
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -560,7 +604,7 @@ CONTATO_TEMPLATE = '''
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">?? {{ feira.nome }}</a>
+            <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Início</a>
                 <a class="nav-link" href="/palestrante">Palestrante</a>
@@ -655,12 +699,13 @@ CONTATO_TEMPLATE = '''
                         <h4><i class="fas fa-map me-2"></i>Localização</h4>
                         <div class="bg-light p-4 text-center rounded">
                             <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
-                            <p class="mb-2"><strong>Ferreira Infos</strong></p>
+                            <p class="mb-2"><strong>Oliver Infos</strong></p>
                             <p class="text-muted">Rua Castro Alves, 1501, Floriano - PI<br>Caixa d'Água</p>
-                           // <div class="mt-3">
-                             //       <i class="fas fa-bus me-1"></i>Ônibus: Linhas que passam próximas à escola
-                               // </small>
-                            //</div>
+                            <div class="mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-bus me-1"></i>Ônibus: Linhas que passam próximas à escola
+                                </small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -720,11 +765,16 @@ def contato():
         
     return render_custom_template(CONTATO_TEMPLATE)
 
+# Health check para plataformas de deploy
+@app.route('/health')
+def health_check():
+    return 'OK'
+
 if __name__ == '__main__':
     print("=" * 60)
-    print(" SITE DO DIA D DA EPT")
+    print("SITE DO DIA D DA EPT")
     print("=" * 60)
-    print(" Acesse: http://localhost:5000")
-    print(" Pressione Ctrl+C para parar o servidor")
+    print("Acesse: http://localhost:5000")
+    print("Pressione Ctrl+C para parar o servidor")
     print("=" * 60)
     app.run(debug=True, host='0.0.0.0', port=5000)
