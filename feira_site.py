@@ -145,7 +145,7 @@ INDEX_TEMPLATE = '''
     <!-- Ferramentas de IA -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">?? FERRAMENTAS DE IA: UM MUNDO DE POSSIBILIDADES À SUA DISPOSIÇÃO!</h2>
+            <h2 class="text-center mb-5">FERRAMENTAS DE IA: UM MUNDO DE POSSIBILIDADES À SUA DISPOSIÇÃO!</h2>
             <div class="row">
                 <div class="col-md-3 mb-4">
                     <div class="card h-100 shadow text-center">
@@ -207,7 +207,7 @@ INDEX_TEMPLATE = '''
                         <li class="list-group-item"> FUNDAMENTOS DE REDES DE COMPUTADORES</li>
                         <li class="list-group-item"> INGLÊS TÉCNICO</li>
                         <li class="list-group-item"> MÉTODOS ÁGEIS DE DESENVOLVIMENTO</li>
-                        <li class="list-group-item"> QUICK DRAW - Desenhando com IA</li>
+                       
                     </ul>
                 </div>
             </div>
@@ -217,7 +217,7 @@ INDEX_TEMPLATE = '''
     <!-- Cursos Oferecidos -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5"> EM 2025 - ENSINO MÉDIO COM TÉCNICO INTEGRADO</h2>
+            <h2 class="text-center mb-5"> EM 2026 - ENSINO MÉDIO COM TÉCNICO INTEGRADO</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card shadow">
@@ -657,11 +657,10 @@ CONTATO_TEMPLATE = '''
                             <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
                             <p class="mb-2"><strong>Oliver Infos</strong></p>
                             <p class="text-muted">Rua Castro Alves, 1501, Floriano - PI<br>Caixa d'Água</p>
-                            <div class="mt-3">
-                                <small class="text-muted">
-                                    <i class="fas fa-bus me-1"></i>Ônibus: Linhas que passam próximas à escola
-                                </small>
-                            </div>
+                           // <div class="mt-3">
+                             //       <i class="fas fa-bus me-1"></i>Ônibus: Linhas que passam próximas à escola
+                               // </small>
+                            //</div>
                         </div>
                     </div>
                 </div>
