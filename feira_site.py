@@ -103,9 +103,6 @@ INDEX_TEMPLATE = '''
                         <a class="nav-link" href="/">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/palestrante">Palestrante</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
@@ -297,7 +294,7 @@ INDEX_TEMPLATE = '''
         <div class="container text-center">
             <h3 class="mb-4">Venha conhecer nossos projetos técnicos!</h3>
             <p class="lead mb-4">Uma oportunidade única de ver o talento e criatividade dos nossos alunos em ação.</p>
-            <a href="/palestrante" class="btn btn-success btn-lg me-3">Conheça a Palestrante</a>
+            <a href="/sobre" class="btn btn-success btn-lg me-3">Saiba Mais</a>
             <a href="/contato" class="btn btn-outline-success btn-lg">Entre em Contato</a>
         </div>
     </section>
@@ -319,145 +316,6 @@ INDEX_TEMPLATE = '''
                         Rua Castro Alves, 1501, Floriano - PI<br>
                         Caixa d'Água | Redes Sociais: @cetibucarneto
                     </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-'''
-
-# Template da página da palestrante
-PALESTRANTE_TEMPLATE = '''
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ feira.nome }} - Palestrante</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .navbar-brand { font-size: 1.5rem; }
-        .card { transition: transform 0.3s ease; }
-        .card:hover { transform: translateY(-5px); }
-        .palestrante-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .timeline {
-            position: relative;
-            padding: 20px 0;
-        }
-        .timeline-item {
-            margin-bottom: 30px;
-            padding-left: 30px;
-            border-left: 3px solid #28a745;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="/">Início</a>
-                <a class="nav-link active" href="/palestrante">Palestrante</a>
-                <a class="nav-link" href="/sobre">Sobre</a>
-                <a class="nav-link" href="/contato">Contato</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header Palestrante -->
-    <section class="palestrante-header">
-        <div class="container">
-            <h1 class="display-4 fw-bold">PALESTRANTE CONVIDADA</h1>
-            <p class="lead">Especialista em Tecnologia e Inovação</p>
-        </div>
-    </section>
-
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <!-- Perfil da Palestrante -->
-                <div class="card shadow mb-5">
-                    <div class="card-body text-center">
-                        <div class="mb-4">
-                            <i class="fas fa-user-graduate fa-5x text-primary mb-3"></i>
-                            <h2 class="card-title">Otilia de Sousa Santos</h2>
-                            <p class="lead text-muted">Analista de Sistemas | Mestre em Ciência da Computação</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formação Acadêmica -->
-                <div class="card shadow mb-5">
-                    <div class="card-header bg-success text-white">
-                        <h4 class="mb-0"><i class="fas fa-graduation-cap me-2"></i>Formação Acadêmica</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <h5>Mestre em Ciência da Computação</h5>
-                                <p class="text-muted">UFERSA/UERN</p>
-                            </div>
-                            <div class="timeline-item">
-                                <h5>Bacharel em Sistemas de Informação</h5>
-                                <p class="text-muted">UFPI</p>
-                            </div>
-                            <div class="timeline-item">
-                                <h5>Técnica em Informática</h5>
-                                <p class="text-muted">CTF/Floriano</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experiência Profissional -->
-                <div class="card shadow mb-5">
-                    <div class="card-header bg-primary text-white">
-                        <h4 class="mb-0"><i class="fas fa-briefcase me-2"></i>Experiência Profissional</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-building fa-2x text-success me-3"></i>
-                            <div>
-                                <h5 class="mb-1">Atualmente: Analista de Sistemas</h5>
-                                <p class="mb-0 text-muted">INTERPI - Instituto de Terras do Piauí</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mensagem Inspiradora -->
-                <div class="card shadow border-warning">
-                    <div class="card-body text-center">
-                        <i class="fas fa-quote-left fa-2x text-warning mb-3"></i>
-                        <blockquote class="blockquote">
-                            <p class="mb-0 lead">"QUE AS FEIRAS SEJAM UM PERÍODO DE INSPIRAÇÃO PARA O PRÓXIMO ANO LETIVO."</p>
-                        </blockquote>
-                        <footer class="blockquote-footer mt-3">Otilia de Sousa Santos</footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>{{ feira.nome }}</h5>
-                    <p>{{ feira.data }}<br>{{ feira.local }}<br>{{ feira.horario }}</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p>&copy; 2025 {{ feira.nome }}</p>
                 </div>
             </div>
         </div>
@@ -497,7 +355,6 @@ SOBRE_TEMPLATE = '''
             <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Início</a>
-                <a class="nav-link" href="/palestrante">Palestrante</a>
                 <a class="nav-link active" href="/sobre">Sobre</a>
                 <a class="nav-link" href="/contato">Contato</a>
             </div>
@@ -607,7 +464,6 @@ CONTATO_TEMPLATE = '''
             <a class="navbar-brand fw-bold" href="/"> {{ feira.nome }}</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/">Início</a>
-                <a class="nav-link" href="/palestrante">Palestrante</a>
                 <a class="nav-link" href="/sobre">Sobre</a>
                 <a class="nav-link active" href="/contato">Contato</a>
             </div>
@@ -735,10 +591,6 @@ CONTATO_TEMPLATE = '''
 @app.route('/')
 def index():
     return render_custom_template(INDEX_TEMPLATE)
-
-@app.route('/palestrante')
-def palestrante():
-    return render_custom_template(PALESTRANTE_TEMPLATE)
 
 @app.route('/sobre')
 def sobre():
